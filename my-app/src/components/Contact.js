@@ -81,7 +81,7 @@ export default function Contact() {
                             }
                         }
                         try {
-                            const url = "http://localhost:5000/contact"
+                            const url = `${process.env.URL}/contact`
 
                             const data = await fetch(url, {
                                 method: "POST",
