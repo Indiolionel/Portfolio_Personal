@@ -5,7 +5,6 @@ import { Field, Form, Formik } from 'formik'
 
 
 
-
 export default function Contact() {
 
     const matchEmail = (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)
@@ -81,8 +80,8 @@ export default function Contact() {
                             }
                         }
                         try {
-                            const url = `${process.env.URL}/contact`
-
+                            const url = `${process.env.REACT_APP_URL}/contact`
+                            console.log(url)
                             const data = await fetch(url, {
                                 method: "POST",
                                 body: JSON.stringify(dataObject),
