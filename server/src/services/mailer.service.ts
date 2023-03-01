@@ -1,4 +1,7 @@
 import {createTransport} from 'nodemailer'
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export class MailerService {
     constructor() { }
@@ -7,15 +10,17 @@ export class MailerService {
         // console.log(message,to)
         const message = "Gracias por contactarte, a la brevedad tendra una respuesta"
 
+
+
         try {
             const transporter = createTransport({
-                host: "smtp.gmail.com",
+                host: process.env.HOST_NODEMAILER,
                 port: 465,
                 secure: true
                 , 
                 auth: {
-                    user: 'conciencia.inmaculata@gmail.com',
-                    pass: 'auvgtxkfegfgwohu'
+                    user: process.env.USER_NODEMAILER,
+                    pass: process.env.PASS_NODEMAILER
                 },
                 tls: {
                     rejectUnauthorized: false
