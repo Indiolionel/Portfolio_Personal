@@ -11,7 +11,7 @@ export default function Testimonials({ info, setInfo }) {
       image: "https://miro.medium.com/max/1400/1*CoNfZX0Bx3WXfKBMyUYQNQ.png",
       name: "Bootcamp Full-Stack",
       company: "Nucba",
-      skill: "Aprendi: a trabajar en equipo, a deployar proyectos en produccion (front, back, base de datos) "
+      skill: "Aprendi: a trabajar en equipo, a deployar proyectos en produccion (front, back, base de datos), manejo de librerias y framework"
     },
     {
       quote: "Marzo 2010 - Agosto 2014",
@@ -19,13 +19,8 @@ export default function Testimonials({ info, setInfo }) {
       image: "https://pbs.twimg.com/profile_images/1617873822132375555/6Iu97iN6_400x400.jpg",
       name: "Ingenieria en Sistemas de informacion",
       company: "U.T.N frlp",
-      skill: `Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistica
-      Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistic
-      Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistic
-      Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistic
-      Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistic
-      Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistic
-      Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistic
+      skill: `Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistica, sistemas y organizaciones
+      
       `
 
     }

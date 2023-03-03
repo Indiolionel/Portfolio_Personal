@@ -7,7 +7,6 @@ export default function Skills() {
 
   const skills = [{ name: "Html", point: "8.5" }, { name: "Css", point: "8" }, { name: "JavaScript", point: "8" }, { name: "TypeScript", point: "7" }, { name: "Redux", point: "8.5" }, { name: "Firebase", point: "8" }, { name: "React js", point: "8" }, { name: "Node js", point: "7" },
   { name: "Express", point: "7.5" },{ name: "Git", point: "7" }, { name: "Postgresql", point: "8" }, { name: "ORM's", point: "9" }, { name: "Graphql", point: "5.6" }, { name: "Tailwinds", point: "8" }, { name: "Mongodb", point: "7" }, { name: "Cypress", point: "5" }, { name: "Postman", point: "8" }, { name: "Docker", point: "7" }, { name: "JsToken", point: "7.5" }, { name: "S.O.L.I.D", point: "6.8" }]
-  const [punto, setPunto] = useState(false)
   
   
   return (
