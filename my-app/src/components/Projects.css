@@ -1,0 +1,31 @@
+
+
+@keyframes rotate {
+    0% {
+        transform: perspective(2000px) rotateY(0deg)
+    }
+
+    100% {
+        transform: perspective(2000px) rotateY(360deg);
+    }
+}
+
+
+
+
+@media (min-width: 550px) {
+    .slider {
+        position: relative;
+        height: 400px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    
+    }
+    .slider-div {
+        position: absolute;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*120deg)) translateZ(200px) ;
+    }
+    
+}

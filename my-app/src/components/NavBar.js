@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
+import cv from '../cv.pdf'
 
 export default function Navbar() {
 
@@ -38,10 +39,11 @@ export default function Navbar() {
         </nav>
         <a href="https://www.linkedin.com/in/santiagococciardi2019/" className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none text-white hover:bg-gray-700 rounded text-base mt-4 md:mt-0" target="_blank">Linkedin</a>
         <a
-          href="#contact"
+          href={cv}
+          download
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none text-white hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
           onClick={() => setCurrent("")} >
-          Contact Me
+          Descargar CV
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </a>
       </div>

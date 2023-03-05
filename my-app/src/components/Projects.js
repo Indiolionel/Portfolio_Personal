@@ -1,13 +1,18 @@
 
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
+import { CSSProperties } from "react";
 import photoPlantas from '../img/proyectoPlantas.png'
 import todoList from '../img/todoList.png'
 import trueque from '../img/trueque.png'
+import './Projects.css'
 
 // import { projects } from "../data";
 
 export default function Projects() {
+
+
+
 
   const projects = [
     {
@@ -18,23 +23,24 @@ export default function Projects() {
       title: "App truequeLand",
       description: "Desarrollo Front-End"
     },
-  {
-    link: "https://to-do-list-five-lime.vercel.app/",
-    gitLink: "https://github.com/Indiolionel/ToDoList",
-    image: `${todoList}`,
-    subtitle: "App conexion api pokeapi y lista de tareas",
-    title: "App to-do-list",
-    description: "Desarrollo Front-End"
-  },
-  {
+    {
+      link: "https://to-do-list-five-lime.vercel.app/",
+      gitLink: "https://github.com/Indiolionel/ToDoList",
+      image: `${todoList}`,
+      subtitle: "App conexion api pokeapi y lista de tareas",
+      title: "App to-do-list",
+      description: "Desarrollo Front-End"
+    }
+    ,
+    {
 
-    link: "https://react-nucba-production.up.railway.app/",
-    gitLink: "https://github.com/Indiolionel/React-Nucba",
-    image: `${photoPlantas}`,
-    subtitle: "App venta de plantas",
-    title: "Plantas App",
-    description: "Desarrollo Full-Stack"
-  }
+      link: "https://react-nucba-production.up.railway.app/",
+      gitLink: "https://github.com/Indiolionel/React-Nucba",
+      image: `${photoPlantas}`,
+      subtitle: "App venta de plantas",
+      title: "Plantas App",
+      description: "Desarrollo Full-Stack"
+    }
   ]
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
@@ -48,17 +54,18 @@ export default function Projects() {
             The projects that I have carried out will be reflected below, always oriented to full-stack
           </p>
         </div>
-        <div className="flex flex-wrap justify-center -m-4">
-          {projects.map((project) => (
+        <div className="flex flex-wrap justify-center items-center w-full slider"  >
+          {projects.map((project, id) => (
+
             <>
-              <div className="mx-2 border-2 border-gray-800 my-2 bg-black">
+              <div className="mx-2 border-2 border-gray-800 my-2 bg-black slider-div" style={{ '--i': id }} >
                 <a
                   href={project.link}
                   key={project.image}
-                  className="sm:w-1/2 w-100 p-4"
+                  className="sm:w-1/2 w-100 p-4 "
                   target="_blank"
                 >
-                  <div className="flex relative mb-2 w-64 h-64">
+                  <div className="flex relative mb-2 w-64 h-64 slider-img" >
                     <img
                       alt="Plantas-img"
                       className="absolute inset-0 w-full h-full object-cover object-center"
@@ -75,7 +82,10 @@ export default function Projects() {
                     </div>
                   </div>
                 </a>
-                <a class="inline-flex items-center justify-center h-10 px-5 py-3 my-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-800" href={project.gitLink}> Proyecto en Git</a>
+                <a class="inline-flex items-center justify-center h-10 px-5 py-3 my-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-800"
+                  href={project.gitLink}
+                  target="_blank"
+                > Proyecto en Git</a>
               </div>
             </>
           ))}
