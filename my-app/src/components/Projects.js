@@ -1,7 +1,5 @@
 
-import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { CSSProperties } from "react";
 import photoPlantas from '../img/proyectoPlantas.png'
 import todoList from '../img/todoList.png'
 import trueque from '../img/trueque.png'

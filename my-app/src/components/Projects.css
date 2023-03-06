@@ -12,6 +12,28 @@
 
 
 
+@media (max-width:549px) {
+    .slider-div-skill {
+        position: absolute;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*22deg)) translateZ(200px) ;
+    }
+
+    .container-skill {
+        margin-bottom: 0;
+    }
+    
+    .slider-skill {
+        position: relative;
+        height: 400px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+        margin-top:-70px;
+        margin-bottom: -100px
+    
+    }
+}
 
 @media (min-width: 550px) {
     .slider {
@@ -28,4 +50,10 @@
         transform: rotateY(calc(var(--i)*120deg)) translateZ(200px) ;
     }
     
+    
 }
+/* @media (min-width:768) {
+    .slider-div-skill {
+        transform: translateZ(600px) ;
+    }
+} */
