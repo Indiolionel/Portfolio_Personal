@@ -25,7 +25,7 @@ export default function Projects() {
       link: "https://to-do-list-five-lime.vercel.app/",
       gitLink: "https://github.com/Indiolionel/ToDoList",
       image: `${todoList}`,
-      subtitle: "App conexion api pokeapi y lista de tareas",
+      subtitle: "Conexion a api PokeApi",
       title: "App to-do-list",
       description: "Desarrollo Front-End"
     }
@@ -57,6 +57,10 @@ export default function Projects() {
 
             <>
               <div className="mx-2 border-2 border-gray-800 my-2 bg-black slider-div" style={{ '--i': id }} >
+                <div className="lg:hidden mt-4">
+                  <h1>{project.title}</h1>
+                  <h2> {project.subtitle}</h2>
+                </div>
                 <a
                   href={project.link}
                   key={project.image}
