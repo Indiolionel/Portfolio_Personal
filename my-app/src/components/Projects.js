@@ -32,7 +32,7 @@ export default function Projects() {
     ,
     {
 
-      link: "https://react-nucba-production.up.railway.app/",
+      link: "https://plantasventas.up.railway.app",
       gitLink: "https://github.com/Indiolionel/React-Nucba",
       image: `${photoPlantas}`,
       subtitle: "App e-commerce de plantas",
