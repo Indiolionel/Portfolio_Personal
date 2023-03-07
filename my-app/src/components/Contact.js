@@ -40,7 +40,7 @@ export default function Contact() {
                     <div className="bg-gray-800 relative flex w-full flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                ADDRESS
+                                DIRECCION
                             </h2>
                             <p className="mt-1 text-indigo-400">
                                 Azul, Bs.As 7300
@@ -54,7 +54,7 @@ export default function Contact() {
                                 santi.cocciardi@gmail.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                PHONE
+                                TELEFONO
                             </h2>
                             <p className="leading-relaxed text-indigo-400">+054-2216240572</p>
                         </div>
@@ -126,7 +126,7 @@ export default function Contact() {
 
                                 <div className="relative">
                                     <label htmlFor="subject" className="leading-7 text-sm text-gray-400">
-                                        Subject
+                                        Asunto
                                     </label>
                                     <Field
                                         style={errors.subject && { border: "solid 1px rgb(214,47,39)" }}
@@ -146,7 +146,7 @@ export default function Contact() {
                                     <label
                                         htmlFor="message"
                                         className="leading-7 text-sm text-gray-400">
-                                        Message
+                                        Mensaje
                                     </label>
                                     <Field
                                         style={errors.message && { border: "solid 1px rgb(214,47,39)" }}
@@ -167,7 +167,7 @@ export default function Contact() {
                                     className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                                     {loading && <div className="bg-green-600 border -mt-24  h-1/6  w-full absolute opacity-70"> <p className="text-white text-lg px-4">Mensaje enviado, a la brevedad tendras una respuesta !!</p></div>}
 
-                                    Submit
+                                    Enviar
 
                                 </button>
 

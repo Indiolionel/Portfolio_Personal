@@ -49,28 +49,16 @@ export default function Skills() {
         <div className="text-center mb-20 container-skill">
           <ChipIcon className="w-10 inline-block mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray mb-4">
-            Skills &amp; Technologies
+            Skills &amp; Tecnologias
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            Skills and tools I use every day
+            Habilidades y herramientas que uso todos los días
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center slider-skill ">
           {skills.map((skill, id) => (
             <div key={skill.name} className="p-2 w-1/6 slider-div-skill" style={{ '--i': (id) }}>
-              {/* <div className="bg-gray-800 rounded flex p-4 h-full items-center" >
-                <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white w-full px-2" >
-                  <div className="w-full flex flex-col justify-between " >
-                    <p className="w-2/5">{skill.name}</p>
-                    <div className=" w-full bg-white h-4 relative">
-                     <div className="absolute" style={{width:`${skill.image*10}%`}}><div className='bg-green-600 h-4 relative animate-ready'></div>
-                     </div> 
-                      <div className="bg-green-600 rounded-md absolute right-0 p-0.5 text-sm -mt-7 text-black animate-opacity">{skill.image*10}%</div>
-                    </div>
-                  </div>
-                </span>
-              </div> */}
+              
               <img
                 className=" object-cover"
                 alt="imagen"

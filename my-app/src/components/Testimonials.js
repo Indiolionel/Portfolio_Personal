@@ -6,22 +6,20 @@ export default function Testimonials({ info, setInfo }) {
 
   const testimonials = [
     {
-      quote: "September 2021 - November 2022",
+      quote: "Septiembre 2021 - Noviembre 2022",
       linkWeb: "https://www.nucba.com.ar/",
       image: "https://miro.medium.com/max/1400/1*CoNfZX0Bx3WXfKBMyUYQNQ.png",
       name: "Bootcamp Full-Stack",
       company: "Nucba",
-      skill: "Aprendi: a trabajar en equipo, a deployar proyectos en produccion (front, back, base de datos), manejo de librerias y framework"
+      skill: "Aprendí: a trabajar en equipo, a desplegar proyectos en producción (front, back, base de datos), manejo de librerías y framework"
     },
     {
       quote: "Marzo 2010 - Agosto 2014",
       linkWeb: "https://www.frlp.utn.edu.ar/",
       image: "https://pbs.twimg.com/profile_images/1617873822132375555/6Iu97iN6_400x400.jpg",
-      name: "Ingenieria en Sistemas de informacion",
+      name: "Ingenieria en sistemas de informacion",
       company: "U.T.N frlp",
-      skill: `Aprendi: estructura de datos, arquitectura de la computadora, sistemas operativos, base de datos, redes, probabilidad y estadistica, sistemas y organizaciones
-      
-      `
+      skill: `Aprendí: estructura de datos, paradigma y sintaxis de programación, arquitectura de computadoras, sistemas operativos, bases de datos, redes, probabilidad y estadística, sistemas y organizaciones`
 
     }
 
@@ -33,7 +31,7 @@ export default function Testimonials({ info, setInfo }) {
 
 
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray mb-12">
-          Where I studied?
+        ¿Dónde estudié?
         </h1>
         <div className="flex flex-wrap m-4">
           {testimonials.map((testimonial) => (

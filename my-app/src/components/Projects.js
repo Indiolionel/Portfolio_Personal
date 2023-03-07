@@ -17,17 +17,17 @@ export default function Projects() {
       link: "https://integrador-trueque.vercel.app/",
       gitLink: "https://github.com/Indiolionel/integrador-trueque",
       image: `${trueque}`,
-      subtitle: "App hecha solo con js vanilla",
+      subtitle: "App hecha con js vanilla",
       title: "App truequeLand",
-      description: "Desarrollo Front-End"
+      description: "Dev Front-End"
     },
     {
       link: "https://to-do-list-five-lime.vercel.app/",
       gitLink: "https://github.com/Indiolionel/ToDoList",
       image: `${todoList}`,
-      subtitle: "Conexion a api PokeApi",
+      subtitle: "Conexion a api pokeApi",
       title: "App to-do-list",
-      description: "Desarrollo Front-End"
+      description: "Dev Front-End"
     }
     ,
     {
@@ -35,21 +35,20 @@ export default function Projects() {
       link: "https://react-nucba-production.up.railway.app/",
       gitLink: "https://github.com/Indiolionel/React-Nucba",
       image: `${photoPlantas}`,
-      subtitle: "App venta de plantas",
-      title: "Plantas App",
-      description: "Desarrollo Full-Stack"
+      subtitle: "App e-commerce de plantas",
+      title: "App plantas",
+      description: "Dev Full-Stack"
     }
   ]
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
-          {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Apps I've Built
+          Aplicaciones que he creado
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            The projects that I have carried out will be reflected below, always oriented to full-stack
+          Los proyectos que he realizado se verán reflejados a continuación, siempre orientados a full-stack
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center w-full slider"  >
@@ -87,7 +86,7 @@ export default function Projects() {
                 <a class="inline-flex items-center justify-center h-10 px-5 py-3 my-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-800"
                   href={project.gitLink}
                   target="_blank"
-                > Proyecto en Git</a>
+                > Git Hub</a>
               </div>
             </>
           ))}

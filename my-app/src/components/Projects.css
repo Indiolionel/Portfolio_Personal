@@ -49,11 +49,5 @@
         transform-style: preserve-3d;
         transform: rotateY(calc(var(--i)*120deg)) translateZ(200px) ;
     }
-    
-    
+        
 }
-/* @media (min-width:768) {
-    .slider-div-skill {
-        transform: translateZ(600px) ;
-    }
-} */

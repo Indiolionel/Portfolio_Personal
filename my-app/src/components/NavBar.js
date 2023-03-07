@@ -15,10 +15,10 @@ export default function Navbar() {
         </a>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
           {current === "Work" ? <a href="#projects" className="mr-5 hover:text-gray-400 text-white bg-gray p-2 border rounded">
-            Past Work
+            Mis proyectos
           </a> :
             <a href="#projects" className="mr-5 hover:text-gray-400 text-white" onClick={() => setCurrent("Work")}>
-              Past Work
+              Mis proyectos
             </a>}
           {current === "Skills" ? <a href="#skills" className="mr-5 hover:text-gray-400 text-white bg-gray p-2 border rounded">
             Skills
@@ -29,13 +29,13 @@ export default function Navbar() {
 
           {
             current === "Study" ? <a href="#testimonials" className="mr-5 hover:text-gray-400 text-white p-2 border rounded" >
-              Place of study
+              Estudios
             </a> :
               <a href="#testimonials" className="mr-5 hover:text-gray-400 text-white" onClick={() => setCurrent("Study")} >
-                Place of study
+                Estudios
               </a>
           }
-          
+
         </nav>
         <a href="https://www.linkedin.com/in/santiagococciardi2019/" className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none text-white hover:bg-gray-700 rounded text-base mt-4 md:mt-0" target="_blank">Linkedin</a>
         <a
