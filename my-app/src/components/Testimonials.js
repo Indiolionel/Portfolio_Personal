@@ -16,7 +16,7 @@ export default function Testimonials({ info, setInfo }) {
     {
       quote: "Marzo 2010 - Agosto 2014",
       linkWeb: "https://www.frlp.utn.edu.ar/",
-      image: "https://pbs.twimg.com/profile_images/1617873822132375555/6Iu97iN6_400x400.jpg",
+      image: "https://www.frlp.utn.edu.ar/sites/default/files/logowebok.jpg",
       name: "Ingenieria en sistemas de informacion",
       company: "U.T.N frlp",
       skill: `Aprendí: estructura de datos, paradigma y sintaxis de programación, arquitectura de computadoras, sistemas operativos, bases de datos, redes, probabilidad y estadística, sistemas y organizaciones`
