@@ -1,6 +1,6 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
-import cv from '../cv.pdf'
+import cv from '../Cv_Santi_2023.pdf'
 
 export default function Navbar() {
 
