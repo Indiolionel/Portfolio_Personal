@@ -30,7 +30,7 @@ export default function Projects() {
       image: `${todoList}`,
       subtitle: "Conexion a api pokeApi",
       title: "App to-do-list",
-      description: "FrontEnd con conexion a Api('PokeApi), Poyecto para agregar tareas y guardar informacion llegada en localStorage."
+      description: "FrontEnd con conexion a Api('PokeApi), Proyecto para agregar tareas y guardar informacion en localStorage."
     }
     ,
     {
@@ -77,7 +77,7 @@ export default function Projects() {
                       className="absolute inset-0 w-full h-full object-cover object-center"
                       src={project.image}
                     />
-                    <div className="px-8 py-10 relative z-10 w-full border-y border-gray-700 bg-gray-900 opacity-0 hover:opacity-100">
+                    <div className="px-8 py-10 relative z-10 w-full border-y border-gray-700 bg-gray-900 opacity-0 hover:opacity-100 detail-proyect-movil">
                       <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                         {project.subtitle}
                       </h2>
