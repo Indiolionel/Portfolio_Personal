@@ -12,6 +12,7 @@ export default function Projects() {
   const [valueRange, setValueRange] = useState(2); 
   const [deg, setDeg] = useState('running')
 
+  console.log(typeof valueRange)
   
 
   const projects = [
@@ -96,7 +97,7 @@ export default function Projects() {
           ))}
         </div>
         <div className="flex justify-center mt-10">
-        <input className="my-4" type='range' min='1' max='10' value={valueRange} onChange={(e)=>setValueRange(e.target.value)}
+        <input className="my-4" type='range' min='1' max='10' value={valueRange} onChange={(e)=>setValueRange(+e.target.value)}
          />
          <button className="ml-8 w-28 h-8 mt-2 rounded-md bg-gray-600 text-slate-100 font-normal	" onClick={()=>deg==='running'?setDeg('paused'):setDeg('running')}>{deg==='paused' ? <p>Running</p>: <p>Stop</p>}</button>
         </div>

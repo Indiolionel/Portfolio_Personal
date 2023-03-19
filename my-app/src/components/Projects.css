@@ -47,7 +47,7 @@
         position: relative;
         height: 400px;
         transform-style: preserve-3d;
-        animation: rotate calc((var(--e)*6s)) linear infinite;
+        animation: rotate 100s linear infinite;
         animation-play-state: var(--deg);
     }
 
