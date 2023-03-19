@@ -96,7 +96,7 @@ export default function Projects() {
             </>
           ))}
         </div>
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-16 functions-animation">
         <input className="my-4" type='range' min='1' max='10' value={valueRange} onChange={(e)=>setValueRange(+e.target.value)}
          />
           <button className="opacity-75 ml-8 w-28 h-8 mt-2 rounded-md bg-gray-600 text-white font-normal	" onClick={() => deg === 'running' ? setDeg('paused') : setDeg('running')}>{deg === 'paused' ? <p>Running</p> : <p>Stop</p>}</button>

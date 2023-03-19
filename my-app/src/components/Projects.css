@@ -27,6 +27,11 @@
         transform-style: preserve-3d;
         transform: rotateY(calc(var(--i)*22deg)) translateZ(200px) ;
     }
+    .functions-animation{
+        display: none;
+        margin-top: 10px;
+        
+    }
 
     .container-skill {
         margin-bottom: 0;
