@@ -28,11 +28,11 @@
     }
 
     50% {
-        opacity: 0.5;
+        opacity: 1;
     }
 
     75% {
-        opacity: 0.8;
+        opacity: 1;
     }
 
     100% {
