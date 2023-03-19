@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import photoPlantas from '../img/proyectoPlantas.png'
 import todoList from '../img/todoList.png'
 import trueque from '../img/trueque.png'
@@ -9,7 +9,8 @@ import './Projects.css'
 
 export default function Projects() {
 
-
+  const [valueRange, setValueRange] = useState(2); 
+  const [deg, setDeg] = useState('running')
 
 
   const projects = [
@@ -19,7 +20,7 @@ export default function Projects() {
       image: `${trueque}`,
       subtitle: "App hecha con js vanilla",
       title: "App truequeLand",
-      description: "Dev Front-End"
+      description: "FrontEnd, Proyecto hecho con js vanilla ES6"
     },
     {
       link: "https://to-do-list-five-lime.vercel.app/",
@@ -27,7 +28,7 @@ export default function Projects() {
       image: `${todoList}`,
       subtitle: "Conexion a api pokeApi",
       title: "App to-do-list",
-      description: "Dev Front-End"
+      description: "FrontEnd con conexion a Api('PokeApi), Poyecto para agregar tareas y guardar informacion llegada en localStorage."
     }
     ,
     {
@@ -37,9 +38,11 @@ export default function Projects() {
       image: `${photoPlantas}`,
       subtitle: "App e-commerce de plantas",
       title: "App plantas",
-      description: "Dev Full-Stack"
+      description: "Full Stack, Herramientas que utilice, React, Redux, Node js, Express js, Docker, Jwt, Tailwind, PostgreSql, TypeScript "
     }
   ]
+
+  console.log(valueRange*6)
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -51,7 +54,7 @@ export default function Projects() {
           Los proyectos que he realizado se verán reflejados a continuación, siempre orientados a full-stack
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center w-full slider"  >
+        <div className="flex flex-wrap justify-center items-center w-full slider"  style={{ '--e': 10/valueRange, '--deg': deg }} >
           {projects.map((project, id) => (
 
             <>
@@ -91,6 +94,12 @@ export default function Projects() {
             </>
           ))}
         </div>
+        <div className="flex justify-center mt-10">
+        <input className="my-4" type='range' min='1' max='10' value={valueRange} onChange={(e)=>setValueRange(e.target.value)}
+         />
+         <button className="ml-8 w-28 h-8 mt-2 rounded-md bg-gray-600 text-slate-100 font-normal	" onClick={()=>deg==='running'?setDeg('paused'):setDeg('running')}>{deg==='paused' ? <p>Running</p>: <p>Stop</p>}</button>
+        </div>
+        
       </div>
     </section>
   );
