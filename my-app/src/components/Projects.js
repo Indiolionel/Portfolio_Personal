@@ -9,11 +9,11 @@ import './Projects.css'
 
 export default function Projects() {
 
-  const [valueRange, setValueRange] = useState(2); 
+  const [valueRange, setValueRange] = useState(2);
   const [deg, setDeg] = useState('running')
 
   console.log(typeof valueRange)
-  
+
 
   const projects = [
     {
@@ -44,19 +44,19 @@ export default function Projects() {
     }
   ]
 
-  console.log(valueRange*6)
+  console.log(valueRange * 6)
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-          Aplicaciones que he creado
+            Aplicaciones que he creado
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Los proyectos que he realizado se verán reflejados a continuación, siempre orientados a full-stack
+            Los proyectos que he realizado se verán reflejados a continuación, siempre orientados a full-stack
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center w-full slider"  style={{ '--e': 10/valueRange, '--deg': deg }} >
+        <div className="flex flex-wrap justify-center items-center w-full slider" style={{ '--e': 10 / valueRange, '--deg': deg }} >
           {projects.map((project, id) => (
 
             <>
@@ -97,11 +97,9 @@ export default function Projects() {
           ))}
         </div>
         <div className="flex justify-center mt-10">
-        <input className="my-4" type='range' min='1' max='10' value={valueRange} onChange={(e)=>setValueRange(+e.target.value)}
-         />
-         <button className="ml-8 w-28 h-8 mt-2 rounded-md bg-gray-600 text-slate-100 font-normal	" onClick={()=>deg==='running'?setDeg('paused'):setDeg('running')}>{deg==='paused' ? <p>Running</p>: <p>Stop</p>}</button>
+          <button className="opacity-75 ml-8 w-28 h-8 mt-2 rounded-md bg-gray-600 text-white font-normal	" onClick={() => deg === 'running' ? setDeg('paused') : setDeg('running')}>{deg === 'paused' ? <p>Running</p> : <p>Stop</p>}</button>
         </div>
-        
+
       </div>
     </section>
   );
