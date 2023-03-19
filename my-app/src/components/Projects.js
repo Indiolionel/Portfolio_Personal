@@ -12,6 +12,7 @@ export default function Projects() {
   const [valueRange, setValueRange] = useState(2); 
   const [deg, setDeg] = useState('running')
 
+  
 
   const projects = [
     {
