@@ -7,7 +7,6 @@ export class MailerService {
     constructor() { }
 
     static async send(to: string, subject:string) {
-        // console.log(message,to)
         const message = "Gracias por contactarte, a la brevedad tendra una respuesta"
 
 

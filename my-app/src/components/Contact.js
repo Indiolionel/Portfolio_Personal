@@ -42,7 +42,7 @@ export default function Contact() {
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 DIRECCION
                             </h2>
-                            <p className="mt-1 text-indigo-400">
+                            <p className="mt-1 text-green-600">
                                 Azul, Bs.As 7300
                             </p>
                         </div>
@@ -50,13 +50,13 @@ export default function Contact() {
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 EMAIL
                             </h2>
-                            <a className="text-indigo-700 w-1/2 leading-relaxed">
+                            <a className="text-green-600 w-1/2 leading-relaxed">
                                 santi.cocciardi@gmail.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 TELEFONO
                             </h2>
-                            <p className="leading-relaxed text-indigo-400">+054-2216240572</p>
+                            <p className="leading-relaxed text-green-600">+054-2216240572</p>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,6 @@ export default function Contact() {
                         }
                         try {
                             const url = `${process.env.REACT_APP_URL}/contact`
-                            console.log(url)
                             const data = await fetch(url, {
                                 method: "POST",
                                 body: JSON.stringify(dataObject),
@@ -89,7 +88,6 @@ export default function Contact() {
                                     'Content-Type': 'application/json'
                                 },
                             });
-                            console.log(data)
                             handlerNew()
                             resetForm()
                             return data;
@@ -164,10 +162,10 @@ export default function Contact() {
 
                                 <button
                                     type="submit"
-                                    className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                                    {loading && <div className="bg-green-600 border -mt-24  h-1/6  w-full absolute opacity-70"> <p className="text-white text-lg px-4">Mensaje enviado, a la brevedad tendras una respuesta !!</p></div>}
+                                    className="text-white bg-green-600 hover:bg-green-700 border-0 py-2 px-6 focus:outline-none rounded text-lg">
 
-                                    Enviar
+{loading ? <div className="text-center"> <p className="text-gray-800 font-normal text-lg px-4">Mensaje enviado, a la brevedad tendras una respuesta</p></div>: <p>Enviar</p>}
+
 
                                 </button>
 

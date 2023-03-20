@@ -15,10 +15,4 @@ export class ContactControllers {
 
    
 
-    // public static async getAll(req: Request, res: Response) {
-    //     const users = await ContactService.getAll();
-
-    //     res.status(users.success ? 201 : 400).send(users);
-    // }
-
 }

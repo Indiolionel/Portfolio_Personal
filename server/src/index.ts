@@ -28,15 +28,6 @@ server.use('/contact', contactRouter);
 
 
 
-// server.get('*', (req, res) => {    
-// 	res.sendFile(path.join(publicPath, 'index.html')), function(err: any) {             
-// 	if (err) {                 
-// 		 res.status(500).send(err) 
-// 		 }        
-// 	};
-// });
-
-
 server.listen(port, () => {
 	console.log(`Running in port: ${port}`);
 });

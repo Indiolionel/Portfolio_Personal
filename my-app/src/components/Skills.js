@@ -1,8 +1,6 @@
 
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React, { useState } from "react";
-import './Projects.css'
-// import { skills } from "../data";
 import html from '../img/html.png'
 import css from '../img/css.png'
 import js from '../img/javascript.png'

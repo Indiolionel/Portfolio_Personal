@@ -19,13 +19,6 @@ server.use(express_1.default.json());
 server.use((0, cors_1.default)());
 exports.prisma = new client_1.PrismaClient();
 server.use('/contact', contact_router_1.default);
-// server.get('*', (req, res) => {    
-// 	res.sendFile(path.join(publicPath, 'index.html')), function(err: any) {             
-// 	if (err) {                 
-// 		 res.status(500).send(err) 
-// 		 }        
-// 	};
-// });
 server.listen(port, () => {
     console.log(`Running in port: ${port}`);
 });

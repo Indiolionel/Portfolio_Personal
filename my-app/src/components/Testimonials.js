@@ -14,7 +14,7 @@ export default function Testimonials({ info, setInfo }) {
       skill: "Aprendí: a trabajar en equipo, a desplegar proyectos en producción (front, back, base de datos), manejo de librerías y framework"
     },
     {
-      quote: "Marzo 2010 - Agosto 2014",
+      quote: "Marzo 2016 - Julio 2021",
       linkWeb: "https://www.frlp.utn.edu.ar/",
       image: "https://www.frlp.utn.edu.ar/sites/default/files/logowebok.jpg",
       
@@ -38,7 +38,7 @@ export default function Testimonials({ info, setInfo }) {
           {testimonials.map((testimonial) => (
             <div className="p-4 md:w-1/2 w-full " onMouseLeave={() => setInfo("")}>
 
-              <div className="h-full bg-gray-800 p-8 rounded relative">
+              <div className="h-full bg-gray-700 p-8 rounded relative">
 
                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
                 {info === testimonial.skill &&
@@ -47,7 +47,7 @@ export default function Testimonials({ info, setInfo }) {
                       <p className="text-gray-200 text-start">{testimonial.skill}</p>
                     </div>
                   </div>}
-                <p className="leading-relaxed mb-6 text-gray-500 font-bold">{testimonial.quote}</p>
+                <p className="leading-relaxed mb-6 text-gray-900 font-bold">{testimonial.quote}</p>
                 <div className="inline-flex items-center">
                   <a
                     href={testimonial.linkWeb}
@@ -63,7 +63,7 @@ export default function Testimonials({ info, setInfo }) {
                     <span className="title-font font-medium text-white">
                       {testimonial.name}
                     </span>
-                    <button onClick={() => setInfo(testimonial.skill)} className="mt-4"><span className=" border rounded p-2 bg-gray-600 text-white hover:bg-gray-900 cursor-pointer">{testimonial.company}</span></button>
+                    <button onClick={() => setInfo(testimonial.skill)} className="mt-4"><span className=" border rounded p-2  text-gray-400 bg-gray-800 hover:bg-gray-700 hover:text-white cursor-pointer">{testimonial.company}</span></button>
                   </span>
                 </div>
               </div>

@@ -20,7 +20,6 @@ class MailerService {
     constructor() { }
     static send(to, subject) {
         return __awaiter(this, void 0, void 0, function* () {
-            // console.log(message,to)
             const message = "Gracias por contactarte, a la brevedad tendra una respuesta";
             try {
                 const transporter = (0, nodemailer_1.createTransport)({
