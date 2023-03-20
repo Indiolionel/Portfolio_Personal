@@ -35,5 +35,6 @@
 
     .proyectoDetalleMovil {
         animation: proyectoDetalleMovil 6s linear alternate infinite;
+        
     }
 }
