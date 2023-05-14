@@ -23,9 +23,9 @@ export default function Projects() {
       link: "https://contechia.com",
       gitLink: "",
       image: `${contechIA}`,
-      subtitle: "Informacion de distintas ias, con cursos e informacion",
+      subtitle: "Informacion y cursos de IAs",
       title: "Pagina IAs",
-      description: "Fullstack, pagina de usuarios para obtener informacion de las diferents IAs que existen al dia"
+      description: "Fullstack, Información de las diferents IAs que existen al dia"
     },
     {
       link: "https://to-do-list-five-lime.vercel.app/",
@@ -65,12 +65,12 @@ export default function Projects() {
               <div className="mx-2 border-none rounded-lg my-2 bg-black" >
                 <div className="lg:hidden mt-4">
                   <h1>{project.title}</h1>
-                  <h2> {project.subtitle}</h2>
+                  <h2 className="w-[250px] flex justify-center"> {project.subtitle}</h2>
                 </div>
                 <a
                   href={project.link}
                   key={project.image}
-                  className="sm:w-1/2 w-100 p-4 "
+                  className="sm:w-1/2 w-100 p-4"
                   target="_blank"
                 >
                   <div className="flex relative mb-2 w-64 h-64" >
