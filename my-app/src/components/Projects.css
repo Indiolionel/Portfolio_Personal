@@ -29,7 +29,9 @@
 
 }
 
-
+.cursor-not {
+    cursor: not-allowed !important
+}
 
 @media (max-width:549px) {
 

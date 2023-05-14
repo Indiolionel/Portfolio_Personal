@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import photoPlantas from '../img/proyectoPlantas.png'
 import todoList from '../img/todoList.png'
 import trueque from '../img/trueque.png'
+import contechIA from '../img/contechIA.png'
 import './Projects.css'
 
 
@@ -17,6 +18,14 @@ export default function Projects() {
       subtitle: "App hecha con js vanilla",
       title: "App truequeLand",
       description: "FrontEnd, Proyecto hecho con js vanilla ES6"
+    },
+    {
+      link: "https://contechia.com",
+      gitLink: "",
+      image: `${contechIA}`,
+      subtitle: "Informacion de distintas ias, con cursos e informacion",
+      title: "Pagina IAs",
+      description: "Fullstack, pagina de usuarios para obtener informacion de las diferents IAs que existen al dia"
     },
     {
       link: "https://to-do-list-five-lime.vercel.app/",
@@ -53,7 +62,7 @@ export default function Projects() {
           {projects.map((project, id) => (
 
             <>
-              <div className="mx-2 border-2 border-gray-800 my-2 bg-black" >
+              <div className="mx-2 border-none rounded-lg my-2 bg-black" >
                 <div className="lg:hidden mt-4">
                   <h1>{project.title}</h1>
                   <h2> {project.subtitle}</h2>
@@ -70,7 +79,7 @@ export default function Projects() {
                       className="absolute inset-0 w-full h-full object-cover object-center"
                       src={project.image}
                     />
-                    <div className="px-8 py-10 relative z-10 w-full border-y border-gray-700 bg-gray-900 opacity-0 hover:opacity-100 proyectoDetalleMovil">
+                    <div className="px-8 py-10 relative z-10 w-full border-y border-gray-700 bg-gray-900 opacity-0 sm:hover:opacity-100 ">
                       <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                         {project.subtitle}
                       </h2>
@@ -81,10 +90,11 @@ export default function Projects() {
                     </div>
                   </div>
                 </a>
-                <a class="inline-flex items-center justify-center h-10 px-5 py-3 my-2 border border-transparent text-base font-medium rounded-md text-gray-400 bg-gray-800 hover:bg-gray-700 hover:text-white"
+                <a class={`${project.gitLink === '' && "opacity-40 hover:opacity-40 pointer-events-none cursor-not"} inline-flex items-center justify-center h-10 px-5 py-3 my-2 border border-transparent text-base font-medium rounded-md text-gray-400 bg-gray-800 hover:bg-gray-700 hover:text-white`}
                   href={project.gitLink}
+                  // disabled={project.gitLink === ''}
                   target="_blank"
-                > GitHub</a>
+                > GitHub {project.gitLink === '' ? "Privado" : null}</a>
               </div>
 
             </>
