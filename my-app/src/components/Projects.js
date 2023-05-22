@@ -5,6 +5,7 @@ import todoList from '../img/todoList.png'
 import trueque from '../img/trueque.png'
 import contechIA from '../img/contechIA.png'
 import './Projects.css'
+import { Gallery } from "./gallery";
 
 
 export default function Projects() {
@@ -49,7 +50,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+      <div className="container flex flex-col justify-center items-center py-10 mx-auto text-center sm:px-40">
         <div className="flex flex-col w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Aplicaciones que he creado
@@ -58,8 +59,9 @@ export default function Projects() {
             Los proyectos que he realizado se verán reflejados a continuación, siempre orientados a full-stack
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center w-full" >
-          {projects.map((project, id) => (
+        <div className="flex justify-center items-center w-3/4" >
+          <Gallery projects={projects}/>
+          {/* {projects.map((project, id) => (
 
             <>
               <div className="mx-2 border-none rounded-lg my-2 bg-black" >
@@ -98,7 +100,7 @@ export default function Projects() {
               </div>
 
             </>
-          ))}
+          ))} */}
         </div>
 
       </div>
