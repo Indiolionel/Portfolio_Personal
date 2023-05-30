@@ -40,7 +40,7 @@ export default function Testimonials({ info, setInfo }) {
       skill: "Aprendí: a trabajar en equipo, a desplegar proyectos en producción (front, back, base de datos), manejo de librerías y framework"
     },
     {
-      quote: "Marzo 2016 - Julio 2021",
+      quote: "Marzo 2016 - Julio 2020",
       linkWeb: "https://www.frlp.utn.edu.ar/",
       image: "https://www.frlp.utn.edu.ar/sites/default/files/logowebok.jpg",
       cssImage: 'py-4',
