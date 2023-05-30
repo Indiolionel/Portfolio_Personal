@@ -20,9 +20,9 @@ export default function About() {
 
         <section id="about">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-start">
+                <div className="lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-start">
 
-                    <h1 className={`title-font sm:text-4xl text-2xl mb-4 font-medium text-gray text-start ${windowWidth> 1023 && 'slide-type-maquina-write'}`} style={{ '--duracion-typing': '1s' }}>
+                    <h1 className={`title-font text-4xl mb-4 font-medium text-gray text-start ${windowWidth> 1023 && 'slide-type-maquina-write'}`} style={{ '--duracion-typing': '1s' }}>
                         <b>  <span>H</span>ola, soy Santiago!</b>
                     </h1>
                     <p className={`title-font sm:text-4xl text-3xl mb-4 font-medium text-gray ${windowWidth> 1023 && 'slide-type-maquina-write'}`} style={{ '--duracion-typing': '3s' }}>
