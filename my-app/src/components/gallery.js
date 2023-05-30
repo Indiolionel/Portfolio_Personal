@@ -10,11 +10,11 @@ import { useState } from 'react';
 
 export const Gallery = ({ projects }) => {
 
-  
+
     const handleDragStart = (e) => e.preventDefault();
     const responsive = {
         0: { items: 1 },
-        640: { items: 1  },
+        640: { items: 1 },
         1024: { items: 2 },
     };
 
@@ -63,11 +63,18 @@ export const Gallery = ({ projects }) => {
                             </div>
                         </div>
                     </a>
-                    <a class={`${project.gitLink === '' && "opacity-40 hover:opacity-40 pointer-events-none cursor-not"} inline-flex items-center justify-center h-10 px-5 py-3 my-2 border border-transparent text-base font-medium rounded-md text-gray-400 bg-gray-800 hover:bg-gray-700 hover:text-white`}
-                        href={project.gitLink}
-                        // disabled={project.gitLink === ''}
-                        target="_blank"
-                    > GitHub {project.gitLink === '' ? "Privado" : null}</a>
+                    <div className='w-full flex justify-around'>
+
+                        <a class={`${project.gitLink === '' && "opacity-40 hover:opacity-40 pointer-events-none cursor-not"} inline-flex items-center justify-center h-10 px-5 py-3 my-2 border border-transparent text-base font-medium rounded-md text-gray-400 bg-gray-800 hover:bg-gray-700 hover:text-white`}
+                            href={project.gitLink}
+                            // disabled={project.gitLink === ''}
+                            target="_blank"
+                        > GitHub {project.gitLink === '' ? "Privado" : null}
+                        </a>
+                        <button>
+                            Info
+                        </button>
+                    </div>
                 </div>
 
             </>
@@ -86,10 +93,10 @@ export const Gallery = ({ projects }) => {
             // onInitialized={4}
             // onSlideChanged={e => setIndex(e.item)}
             infinite={true}
-            renderPrevButton={(e) => { return <ArrowL  /> }}
-            renderNextButton={(e) => { return <ArrowR  /> }}
-            disableDotsControls={windowWidth<768 ? false : true}
-            disableButtonsControls={windowWidth>767 ? false : true}
+            renderPrevButton={(e) => { return <ArrowL /> }}
+            renderNextButton={(e) => { return <ArrowR /> }}
+            disableDotsControls={windowWidth < 768 ? false : true}
+            disableButtonsControls={windowWidth > 767 ? false : true}
 
         />
     );

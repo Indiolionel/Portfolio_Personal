@@ -3,14 +3,13 @@ import { TerminalIcon, UsersIcon } from "@heroicons/react/solid";
 import styled from "styled-components";
 import './Testimonials.css'
 
-// import { testimonials } from "../data";
 
 export default function Testimonials({ info, setInfo }) {
 
 
   let menuRef = useRef();
 
-  const handleFunction = ()=> {
+  const handleFunction = () => {
     setInfo('');
   }
 
@@ -44,9 +43,9 @@ export default function Testimonials({ info, setInfo }) {
       quote: "Marzo 2016 - Julio 2021",
       linkWeb: "https://www.frlp.utn.edu.ar/",
       image: "https://www.frlp.utn.edu.ar/sites/default/files/logowebok.jpg",
-
-      name: "Ingenieria en sistemas de informacion",
-      company: "U.T.N frlp",
+      cssImage: 'py-4',
+      name: "Ingeniería en sistemas de información",
+      company: "U.T.N FRLP",
       skill: `Aprendí: estructura de datos, paradigma y sintaxis de programación, arquitectura de computadoras, sistemas operativos, bases de datos, redes, probabilidad y estadística, sistemas y organizaciones`
 
     }
@@ -61,54 +60,21 @@ export default function Testimonials({ info, setInfo }) {
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray mb-12">
           ¿Dónde estudié?
         </h1>
-        <div className="flex flex-wrap m-4">
+        <div className="flex flex-wrap gap-4 justify-around m-auto w-full text-start">
           {testimonials.map((testimonial) => (
-            <div className="p-4 md:w-1/2 w-full " ref={menuRef}>
+            <div key={testimonial.quote} className="">
 
-              <div className="h-full bg-gray-700 p-8 rounded relative">
 
-                <TerminalIcon className="block w-8 text-gray-500 mb-4" />
-                {info === testimonial.skill &&
-                  <div className={`p-4 bottom-0 left-0  w-full absolute bg-slate-700 animate-opacity scale-up-bottom`}>
-                    <div className="bg-gray-600 p-2 py-8 rounded opacity-80 md:h-44">
-                      <p className="text-gray-200 text-start">{testimonial.skill}</p>
-                      <BotonCerrar
-                        className="flex justify-center items-center"
-                        onClick={()=>handleFunction()}
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fillRule="currentColor"
-                          className="bi bi-x-lg"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                        </svg>
-                      </BotonCerrar>
-                    </div>
-                  </div>}
-                <p className="leading-relaxed mb-6 text-gray-900 font-bold">{testimonial.quote}</p>
-                <div className="inline-flex items-center">
-                  <a
-                    href={testimonial.linkWeb}
-                    target="_blank"
-                  >
-                    <img
-                      alt="testimonial"
-                      src={testimonial.image}
-                      className="w-12 rounded-full flex-shrink-0 object-cover object-center"
-                    />
-                  </a>
-                  <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font font-medium text-white">
-                      {testimonial.name}
-                    </span>
-                    <button onClick={() => setInfo(testimonial.skill)} className="mt-4"><span className=" border rounded p-2  text-gray-400 bg-gray-800 hover:bg-gray-700 hover:text-white cursor-pointer">{testimonial.company}</span></button>
-                  </span>
-                </div>
+              <div class="w-full lg:w-[600px] sm:h-[250px] p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <img src={testimonial.image} className={`w-32 ${testimonial.cssImage} `} />
+
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{testimonial.name}</h5>
+
+                <p class="mb-3 font-normal text-blue-600 dark:text-gray-400">{testimonial.quote}</p>
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{testimonial.skill}</p>
+
               </div>
+
 
             </div>
           ))}
