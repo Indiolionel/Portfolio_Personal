@@ -37,20 +37,17 @@
 
     .proyectoDetalleMovil {
         animation: proyectoDetalleMovil 6s linear alternate infinite;
-        
+
     }
 }
 
-.alice-carousel__prev-btn {
+.alice-carousel__prev-btn {}
 
-}
 .alice-carousel__prev-btn-item {
-  background-color: red;
+    background-color: red;
 }
 
-.alice-carousel__next-btn {
+.alice-carousel__next-btn {}
 
-}
-.alice-carousel__next-btn-item {
+.alice-carousel__next-btn-item {}
 
-}
