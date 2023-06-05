@@ -67,7 +67,7 @@ export default function Skills() {
 
               <hr className='w-full my-2' />
 
-              <h5 class="mb-2  w-full text-center tracking-tight 	text-gray-900 dark:text-white">{skill.name}</h5>
+              <h5 class="mb-2  w-full text-center tracking-tight 	text-gray-900">{skill.name}</h5>
 
 
             </div>

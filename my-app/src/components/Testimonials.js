@@ -68,10 +68,10 @@ export default function Testimonials({ info, setInfo }) {
               <div class="w-full lg:w-[600px] sm:h-[250px] p-6 bg-white border border-gray-200 rounded-lg shadow">
                 <img src={testimonial.image} className={`w-32 ${testimonial.cssImage} `} />
 
-                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{testimonial.name}</h5>
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">{testimonial.name}</h5>
 
-                <p class="mb-3 font-normal text-blue-600 dark:text-gray-400">{testimonial.quote}</p>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{testimonial.skill}</p>
+                <p class="mb-3 font-normal text-blue-600 ">{testimonial.quote}</p>
+                <p class="mb-3 font-normal text-gray-500 ">{testimonial.skill}</p>
 
               </div>
 
