@@ -57,7 +57,7 @@ export default function Skills() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-y-6 justify-center items-center">
           {skills.map((skill, id) => (
 
-            <div class="flex flex-col justify-center items-center m-auto w-5/6 cursor-pointer h-auto hover:-mt-2 font-extralight hover:font-normal bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex flex-col justify-center items-center m-auto w-5/6 cursor-pointer h-auto hover:-mt-2 font-extralight hover:font-normal bg-white border border-gray-200 rounded-lg shadow">
 
               <div className="w-full flex justify-center p-2">
 
